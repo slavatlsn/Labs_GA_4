@@ -1,0 +1,393 @@
+{
+  "id": "balanced",
+  "seed": 5172401,
+  "resources": [
+    {
+      "name": "R1",
+      "downtime": [
+        [
+          18,
+          24
+        ],
+        [
+          75,
+          81
+        ]
+      ]
+    },
+    {
+      "name": "R2",
+      "downtime": [
+        [
+          24,
+          31
+        ],
+        [
+          80,
+          86
+        ]
+      ]
+    },
+    {
+      "name": "R3",
+      "downtime": [
+        [
+          30,
+          38
+        ],
+        [
+          85,
+          91
+        ]
+      ]
+    },
+    {
+      "name": "R4",
+      "downtime": [
+        [
+          36,
+          45
+        ],
+        [
+          90,
+          96
+        ]
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "name": "J01",
+      "release": 5,
+      "due": 53,
+      "weight": 3
+    },
+    {
+      "name": "J02",
+      "release": 16,
+      "due": 80,
+      "weight": 1
+    },
+    {
+      "name": "J03",
+      "release": 4,
+      "due": 75,
+      "weight": 2
+    },
+    {
+      "name": "J04",
+      "release": 7,
+      "due": 45,
+      "weight": 2
+    },
+    {
+      "name": "J05",
+      "release": 9,
+      "due": 46,
+      "weight": 4
+    },
+    {
+      "name": "J06",
+      "release": 15,
+      "due": 68,
+      "weight": 3
+    }
+  ],
+  "operations": [
+    {
+      "job": 0,
+      "step": 1,
+      "family": 0,
+      "pred": [],
+      "duration": {
+        "0": 6,
+        "2": 12
+      }
+    },
+    {
+      "job": 0,
+      "step": 2,
+      "family": 0,
+      "pred": [
+        0
+      ],
+      "duration": {
+        "1": 11,
+        "0": 13
+      }
+    },
+    {
+      "job": 0,
+      "step": 3,
+      "family": 0,
+      "pred": [
+        1
+      ],
+      "duration": {
+        "2": 7,
+        "0": 10
+      }
+    },
+    {
+      "job": 0,
+      "step": 4,
+      "family": 0,
+      "pred": [
+        2
+      ],
+      "duration": {
+        "3": 15,
+        "0": 20
+      }
+    },
+    {
+      "job": 1,
+      "step": 1,
+      "family": 1,
+      "pred": [],
+      "duration": {
+        "1": 12,
+        "0": 18
+      }
+    },
+    {
+      "job": 1,
+      "step": 2,
+      "family": 1,
+      "pred": [
+        4
+      ],
+      "duration": {
+        "2": 6,
+        "3": 13
+      }
+    },
+    {
+      "job": 1,
+      "step": 3,
+      "family": 1,
+      "pred": [
+        5
+      ],
+      "duration": {
+        "3": 12,
+        "2": 19
+      }
+    },
+    {
+      "job": 1,
+      "step": 4,
+      "family": 1,
+      "pred": [
+        6
+      ],
+      "duration": {
+        "0": 13,
+        "1": 18
+      }
+    },
+    {
+      "job": 2,
+      "step": 1,
+      "family": 2,
+      "pred": [],
+      "duration": {
+        "2": 7,
+        "0": 11
+      }
+    },
+    {
+      "job": 2,
+      "step": 2,
+      "family": 2,
+      "pred": [
+        8
+      ],
+      "duration": {
+        "3": 5,
+        "0": 7
+      }
+    },
+    {
+      "job": 2,
+      "step": 3,
+      "family": 2,
+      "pred": [
+        9,
+        4
+      ],
+      "duration": {
+        "0": 5,
+        "1": 8
+      }
+    },
+    {
+      "job": 2,
+      "step": 4,
+      "family": 2,
+      "pred": [
+        10
+      ],
+      "duration": {
+        "1": 6,
+        "3": 10
+      }
+    },
+    {
+      "job": 3,
+      "step": 1,
+      "family": 0,
+      "pred": [],
+      "duration": {
+        "3": 8,
+        "2": 10
+      }
+    },
+    {
+      "job": 3,
+      "step": 2,
+      "family": 0,
+      "pred": [
+        12
+      ],
+      "duration": {
+        "0": 14,
+        "2": 20
+      }
+    },
+    {
+      "job": 3,
+      "step": 3,
+      "family": 0,
+      "pred": [
+        13
+      ],
+      "duration": {
+        "1": 6,
+        "3": 10
+      }
+    },
+    {
+      "job": 3,
+      "step": 4,
+      "family": 0,
+      "pred": [
+        14
+      ],
+      "duration": {
+        "2": 16,
+        "3": 17
+      }
+    },
+    {
+      "job": 4,
+      "step": 1,
+      "family": 1,
+      "pred": [],
+      "duration": {
+        "0": 9,
+        "3": 15
+      }
+    },
+    {
+      "job": 4,
+      "step": 2,
+      "family": 1,
+      "pred": [
+        16
+      ],
+      "duration": {
+        "1": 9,
+        "2": 13
+      }
+    },
+    {
+      "job": 4,
+      "step": 3,
+      "family": 1,
+      "pred": [
+        17,
+        12
+      ],
+      "duration": {
+        "2": 15,
+        "0": 19
+      }
+    },
+    {
+      "job": 4,
+      "step": 4,
+      "family": 1,
+      "pred": [
+        18
+      ],
+      "duration": {
+        "3": 12,
+        "2": 15
+      }
+    },
+    {
+      "job": 5,
+      "step": 1,
+      "family": 2,
+      "pred": [],
+      "duration": {
+        "1": 12,
+        "2": 17
+      }
+    },
+    {
+      "job": 5,
+      "step": 2,
+      "family": 2,
+      "pred": [
+        20
+      ],
+      "duration": {
+        "2": 13,
+        "0": 19
+      }
+    },
+    {
+      "job": 5,
+      "step": 3,
+      "family": 2,
+      "pred": [
+        21
+      ],
+      "duration": {
+        "3": 8,
+        "1": 15
+      }
+    },
+    {
+      "job": 5,
+      "step": 4,
+      "family": 2,
+      "pred": [
+        22
+      ],
+      "duration": {
+        "0": 16,
+        "2": 23
+      }
+    }
+  ],
+  "setup": [
+    [
+      0,
+      3,
+      4
+    ],
+    [
+      4,
+      0,
+      3
+    ],
+    [
+      3,
+      4,
+      0
+    ]
+  ]
+}
